@@ -1,11 +1,11 @@
 # homelessness-dashboard
-design and development project tracking for the homelessness dashboard
+The City of Austin's Office of Design and Delivery is in the process of developing a platform to communicate homelessness initiatives to the public known as the Homelessness Dashboard. This README is intended to centralize documents and resources related to the project.
 
 ## Shared Terms
 
 It's helpful to have shared terms when talking about design and development, so that stakeholders can all stay on the same page when talking about project details. 
 
-Stakeholders mentioned some terms makes sense to have working definitions of. This list is a living document, feel free to aadd to it as shared terms come up. 
+Stakeholders mentioned some terms makes sense to have working definitions of. This list is a living document, feel free to add to it as shared terms come up. 
 
 * **Concise**: showing lots of data with the option to drill down for more text info
 * **Flat**: content _may _be grouped by category, esp without a popup or tooltip. We don't want to click onto a different page to get to more information, more like a single page app
@@ -15,6 +15,17 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 
 ## Links to project resources 
 
+Project Scope and Plan - https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Project%2520Scope%2520and%2520Plan
+
+Project Status Reports - https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Project%2520Status%2520Reports
+
+User Research - https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=User%2520Research
+
+Content - https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Content
+
+Sprint Planning - https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Sprint%2520Planning
+
+Various Documents - https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Various%2520Documents
 
 ## Project requirements
 The project requirements are best thought of as falling into three distinct groups: 
