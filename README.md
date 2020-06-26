@@ -23,9 +23,9 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 
 [Content](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Content)
 
-[Sprint Planning](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Sprint%2520Planning)
+[Visualizations](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Various%2520Documents)
 
-[Various Documents](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Various%2520Documents)
+[Sprint Planning](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Sprint%2520Planning)
 
 ## Project requirements
 The project requirements are best thought of as falling into three distinct groups: 
