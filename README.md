@@ -19,7 +19,7 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 
 [Google Drive](https://drive.google.com/drive/u/1/folders/1JlueahWMpDeG2cFkQUVd14ccokbKq3AQ?ths=true)
 
-## Documents
+## Links to documents
 
 [Project Scope and Plan](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Project%2520Scope%2520and%2520Plan)
 
