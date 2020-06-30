@@ -16,13 +16,50 @@
 
   <body>
     <div>
+      <nav class="coa-box-shadow">
+        <div class="container mt-1">
+          <div class="row">
+            <div class="col-md-3 align-self-center">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="/assets/images/coa-seal.svg"
+                  width="253"
+                  height="90"
+                  class="d-inline-block align-top"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="col-md-8">
+              <h1 class="text-center lead pr-5">
+                Austin Homelessness Dashboard
+              </h1>
+              <p class="small">
+                This dashboard is an informational resource on the issue of
+                homelessness in Austin. The data visualizations featured here
+                are created by the City of Austin. The data is gathered by
+                Austin’s Continuum of Care, led by the Ending Community
+                Homelessness Coalition (ECHO). To view the full set of data,
+                visit data.austin.gov.
+              </p>
+            </div>
+            <div class="col-md-1 align-self-center">
+              <button
+                type="button"
+                class="btn btn-dark coa-data-btn float-right"
+              >
+                Data
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div class="container">
         <div class="row counts">
           <div class="col-md-3">
-            <div
-              class="embed-responsive embed-responsive-16by9"
-              style="margin-top: 60px;"
-            >
+            <div class="embed-responsive embed-responsive-16by9">
               <svg
                 width="238"
                 height="202"
@@ -94,10 +131,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div
-              class="embed-responsive embed-responsive-16by9"
-              style="margin-top: 60px;"
-            >
+            <div class="embed-responsive embed-responsive-16by9">
               <svg
                 width="238"
                 height="202"
@@ -149,7 +183,7 @@
               </svg>
             </div>
           </div>
-          <div class="col-md-3" style="margin-top: 60px;">
+          <div class="col-md-3">
             <div class="embed-responsive embed-responsive-16by9">
               <svg
                 width="238"
@@ -227,7 +261,7 @@
               </svg>
             </div>
           </div>
-          <div class="col-md-3" style="margin-top: 60px;">
+          <div class="col-md-3">
             <div class="embed-responsive embed-responsive-16by9">
               <svg
                 width="238"
@@ -308,7 +342,7 @@
           <div class="col-md-6">
             <div
               class="embed-responsive embed-responsive-16by9 graph"
-              style="margin-bottom: 30px;margin-top: 40px;"
+              style="margin-bottom: 30px; margin-top: 40px;"
             >
               <iframe
                 class="embed-responsive-item"
@@ -341,6 +375,34 @@
         </div>
       </div>
     </div>
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg coa-big-ol-button coa-services"
+          >
+            City Services
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg coa-big-ol-button coa-glossary"
+          >
+            Glossary
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg coa-big-ol-button coa-resources"
+          >
+            Resources
+          </button>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   </body>
