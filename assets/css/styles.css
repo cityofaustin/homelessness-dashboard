@@ -33,3 +33,9 @@
 .is-hidden {
   display: none;
 }
+
+.graph-selection-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
