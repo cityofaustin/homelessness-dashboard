@@ -39,3 +39,12 @@
   flex-wrap: nowrap;
   overflow-x: auto;
 }
+
+.expand-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#housing-card {
+  
+}
