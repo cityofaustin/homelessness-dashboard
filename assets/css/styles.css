@@ -25,3 +25,11 @@
 .coa-resources {
   background-color: #b3d2e0;
 }
+
+.large-number {
+  font-size: 3.3em;
+}
+
+.is-hidden {
+  display: none;
+}
