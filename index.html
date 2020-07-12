@@ -20,39 +20,26 @@
       <nav class="coa-box-shadow">
         <div class="container mt-1">
           <div class="row">
-            <div class="col-md-3 align-self-center">
+            <div class="col-md-4 align-self-center">
               <a class="navbar-brand" href="#">
                 <img
                   src="./assets/images/coa-seal.svg"
-                  width="253"
-                  height="90"
+                  width="100%"
                   class="d-inline-block align-top"
                   alt=""
                 />
               </a>
             </div>
 
-            <div class="col-md-8">
-              <h1 class="text-center lead pr-5">
-                Austin Homelessness Dashboard
+            <div class="col-md-8 ">
+              <h1 class="lead pr-5 pt-4 font-weight-bold">
+                City of Austin Homelessness Dashboard
               </h1>
-              <p class="small">
-                This dashboard is an informational resource on the issue of
-                homelessness in Austin. The data visualizations featured here
-                are created by the City of Austin. The data is gathered by
-                Austin’s Continuum of Care, led by the Ending Community
-                Homelessness Coalition (ECHO). To view the full set of data,
-                visit data.austin.gov.
-              </p>
+              <p class="">This dashboard is an informational resource on the issue of homelessness in Austin. The data visualizations featured here are created by the City of Austin. The data is gathered by Austin’s Continuum of Care, led by the Ending Community Homelessness Coalition (ECHO).</p>
+
+              <p>To view the full set of data, visit <a href="https://data.austintexas.gov/browse?q=homelessness&sortBy=relevance">data.austin.gov</a>.</p>
             </div>
-            <div class="col-md-1 align-self-center">
-              <button
-                type="button"
-                class="btn btn-dark coa-data-btn float-right"
-              >
-                Data
-              </button>
-            </div>
+
           </div>
         </div>
       </nav>
@@ -128,7 +115,7 @@
       <div class="container">
         <div class="row graphs">
           <div class="card col-sm mx-2 my-2 pt-4 pb-3">
-            <h2 class="visualization-card-heading">Housing and shelter</h2>
+            <h2 class="visualization-card-heading pb-1">Housing and shelter</h2>
             <div class="row graph-selection-buttons housing-graph-buttons ml-0 pb-2">
               <button id="housing-total" type="button" class="housing-button btn btn-outline-secondary mr-1 active">Total</button>
               <button id="housing-category" type="button" class="housing-button btn btn-outline-secondary mr-1 not-active">Category</button>
@@ -143,7 +130,7 @@
             </p> -->
           </div>
           <div class="card col-sm mx-2 my-2 pt-4 pb-3">
-            <h2 class="visualization-card-heading">Individuals sheltered</h2>
+            <h2 class="visualization-card-heading pb-1">Individuals sheltered</h2>
             <div class="row graph-selection-buttons housing-graph-buttons ml-0 pb-2">
               <button id="individuals-total" type="button" class="individuals-button btn btn-outline-secondary mr-1 active">Total</button>
               <button id="individuals-age" type="button" class="individuals-button btn btn-outline-secondary mr-1 not-active">Age</button>
@@ -168,7 +155,7 @@
       <div class="container">
         <div class="row graphs">
           <div class="card col-sm mx-2 my-2 pt-3 pb-3">
-            <h2 class="visualization-card-heading">Exits and returns</h2>
+            <h2 class="visualization-card-heading pb-1">Exits and returns</h2>
             <div class="row graph-selection-buttons housing-graph-buttons ml-0 pb-2">
               <button id="exits-returns-exits" type="button" class="exits-returns-button btn btn-outline-secondary mr-1 active">Exits</button>
               <button id="exits-returns-returns" type="button" class="exits-returns-button btn btn-outline-secondary mr-1 not-active">Returns</button>
@@ -187,7 +174,7 @@
             </p> -->
           </div>
           <div class="card col-sm mx-2 my-2 pt-3 pb-3">
-            <h2 class="visualization-card-heading">Funding</h2>
+            <h2 class="visualization-card-heading pb-1">Funding</h2>
             <div class="row graph-selection-buttons housing-graph-buttons ml-0 pb-2">
               <button id="funding-total" type="button" class="funding-button btn btn-outline-secondary mr-1 active">Total</button>
               <button id="funding-source" type="button" class="funding-button btn btn-outline-secondary mr-1 not-active">Source</button>
