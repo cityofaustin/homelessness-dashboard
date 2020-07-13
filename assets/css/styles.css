@@ -45,6 +45,9 @@
   cursor: pointer;
 }
 
-#housing-card {
-  
+
+@media (max-width: 575.98px) {
+.expand-link {
+  display: none;
+}
 }
