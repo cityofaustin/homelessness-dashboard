@@ -7,6 +7,35 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>dashboard1</title>
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <script>
+      function initializeViz() {
+        // gets lists of urls that we want on the page and their associated html ids
+        vizUrls = {
+          "row-one-viz-one":
+            "https://public.tableau.com/views/Changeinthenumberofpeoplewhoarenewlyhomeless/Sheet1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+          "row-one-viz-two":
+            "https://public.tableau.com/views/Breakdownofthedemographicsofpeoplewhoarenewlyhomeless/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+        };
+        vizIds = ["row-one-viz-one", "row-one-viz-two"];
+
+        // An object that contains options specifying how to embed the viz
+        var options = {
+          height: "350px",
+          width: "100%",
+        };
+
+        for (const [key, value] of Object.entries(vizUrls)) {
+          // console.log(`${key}: ${value}`);
+          var placeholderDiv = document.getElementById(key);
+          var url = value;
+          viz = new tableau.Viz(placeholderDiv, url, options);
+        }
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,7 +43,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
-  <body>
+  <body onload="initializeViz();">
     <div>
       <nav class="coa-box-shadow">
         <div class="container mt-1">
@@ -328,15 +357,49 @@
     <div>
       <div class="container">
         <div class="row graphs">
-          <div class="col-md-6">
-            <div
-              class="embed-responsive embed-responsive-16by9 graph"
-              style="margin-top: 40px;"
-            >
-              <iframe
-                class="embed-responsive-item"
-                src="https://public.tableau.com/views/TotalBedsbyYear/Sheet1?:language=en&:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true"
-              ></iframe>
+          <div class="col-md-6 viz-widget">
+            <h2>Newly Homeless</h2>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="row-one-viz-one-tab"
+                  data-toggle="pill"
+                  href="#row-one-viz-one"
+                  role="tab"
+                  aria-controls="row-one-viz-one"
+                  aria-selected="true"
+                  >Individuals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="row-one-viz-two-tab"
+                  data-toggle="pill"
+                  href="#row-one-viz-two"
+                  role="tab"
+                  aria-controls="row-one-viz-two"
+                  aria-selected="false"
+                  >Demographics</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="row-one-viz-one"
+                role="tabpanel"
+                aria-labelledby="row-one-viz-one-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="row-one-viz-two"
+                role="tabpanel"
+                aria-labelledby="row-one-viz-two-tab"
+              >
+              </div>
+
             </div>
           </div>
           <div class="col-md-6">
@@ -404,6 +467,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   </body>
