@@ -1,7 +1,8 @@
-.graph {
+ .viz-widget {
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
+  margin: 15px;
 }
 
 .coa-box-shadow {
@@ -25,3 +26,36 @@
 .coa-resources {
   background-color: #b3d2e0;
 }
+
+.nav-pills .nav-link.active, .nav-pills {
+  border-radius: 15px;
+  height: 25px;
+  line-height: 10px;
+  font-size: 14px;
+  text-align: center;
+
+
+} 
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: black;
+}
+
+.nav-pills .nav-link  {
+  background-color: #F1F2F2;
+  color: black;
+  border-radius: 15px;
+  height: 25px;
+  line-height: 10px;
+  font-size: 14px;
+  text-align: center;
+  margin: 3px;
+  
+}
+
+body {
+  background-color: #FAF9F9;
+}
+
+
+

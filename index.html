@@ -7,6 +7,30 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>dashboard1</title>
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/vizList.js"></script>
+
+    <script>
+      function initializeViz() {
+        // gets lists of urls that we want on the page and their associated html ids from vizList
+        // An object that contains options specifying how to embed the viz
+        var options = {
+          height: "350px",
+          width: "100%",
+        };
+
+        for (const [key, viz] of Object.entries(vizList)) {
+          // console.log(`${key}: ${viz}`);
+          let divId = `section-${viz.section}-layer-${viz.layer}`;
+          let url = viz.url;
+          let vizDiv = document.getElementById(divId);
+          let = new tableau.Viz(vizDiv, url, options);
+        }
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,7 +38,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
-  <body>
+  <body onload="initializeViz();">
     <div>
       <nav class="coa-box-shadow">
         <div class="container mt-1">
@@ -327,50 +351,219 @@
     </div>
     <div>
       <div class="container">
-        <div class="row graphs">
-          <div class="col-md-6">
-            <div
-              class="embed-responsive embed-responsive-16by9 graph"
-              style="margin-top: 40px;"
-            >
-              <iframe
-                class="embed-responsive-item"
-                src="https://public.tableau.com/views/TotalBedsbyYear/Sheet1?:language=en&:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true"
-              ></iframe>
+        <div class="row">
+          <!-- Newly Homeless -->
+          <div class="col viz-widget card">
+            <h2>Newly Homeless</h2>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="section-1-layer-1-tab"
+                  data-toggle="pill"
+                  href="#section-1-layer-1"
+                  role="tab"
+                  aria-controls="section-1-layer-1"
+                  aria-selected="true"
+                  >Individuals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="section-1-layer-2-tab"
+                  data-toggle="pill"
+                  href="#section-1-layer-2"
+                  role="tab"
+                  aria-controls="section-1-layer-2"
+                  aria-selected="false"
+                  >Demographics</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="section-1-layer-1"
+                role="tabpanel"
+                aria-labelledby="section-1-layer-1-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="section-1-layer-2"
+                role="tabpanel"
+                aria-labelledby="section-1-layer-2-tab"
+              ></div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div
-              class="embed-responsive embed-responsive-16by9 graph"
-              style="margin-bottom: 30px; margin-top: 40px;"
-            >
-              <iframe
-                class="embed-responsive-item"
-                src="   https://public.tableau.com/views/PeopleShelterbyYear/Overtime?:language=en&:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true"
-              ></iframe>
+          <!-- Shelter -->
+          <div class="col viz-widget card">
+            <h2>Shelter</h2>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="section-2-layer-1-tab"
+                  data-toggle="pill"
+                  href="#section-2-layer-1"
+                  role="tab"
+                  aria-controls="section-2-layer-1"
+                  aria-selected="true"
+                  >Beds</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="section-2-layer-2-tab"
+                  data-toggle="pill"
+                  href="#section-2-layer-2"
+                  role="tab"
+                  aria-controls="section-2-layer-2"
+                  aria-selected="false"
+                  >Individuals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="section-2-layer-3-tab"
+                  data-toggle="pill"
+                  href="#section-2-layer-3"
+                  role="tab"
+                  aria-controls="section-2-layer-3"
+                  aria-selected="false"
+                  >Demographics</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="section-2-layer-1"
+                role="tabpanel"
+                aria-labelledby="section-2-layer-1-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="section-2-layer-2"
+                role="tabpanel"
+                aria-labelledby="section-2-layer-2-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="section-2-layer-3"
+                role="tabpanel"
+                aria-labelledby="section-2-layer-3-tab"
+              ></div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9 graph">
-              <iframe
-                class="embed-responsive-item"
-                src="https://public.tableau.com/views/Exits_15930134501040/Exits?:language=en&:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true"
-              ></iframe>
+          <!-- Housing -->
+          <div class="col viz-widget card">
+            <h2>Housing</h2>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="section-3-layer-1-tab"
+                  data-toggle="pill"
+                  href="#section-3-layer-1"
+                  role="tab"
+                  aria-controls="section-3-layer-1"
+                  aria-selected="true"
+                  >Beds</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="section-3-layer-2-tab"
+                  data-toggle="pill"
+                  href="#section-3-layer-2"
+                  role="tab"
+                  aria-controls="section-3-layer-2"
+                  aria-selected="false"
+                  >Individuals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="section-3-layer-3-tab"
+                  data-toggle="pill"
+                  href="#section-3-layer-3"
+                  role="tab"
+                  aria-controls="section-3-layer-3"
+                  aria-selected="false"
+                  >Demographics</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="section-3-layer-1"
+                role="tabpanel"
+                aria-labelledby="section-3-layer-1-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="section-3-layer-2"
+                role="tabpanel"
+                aria-labelledby="section-3-layer-2-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="section-3-layer-3"
+                role="tabpanel"
+                aria-labelledby="section-3-layer-3-tab"
+              ></div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9 graph">
-              <iframe
-                class="embed-responsive-item"
-                src="https://public.tableau.com/views/Fundingovertime/Funding-year?:language=en&:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true"
-              ></iframe>
+          <!-- Returns to Homeless -->
+          <div class="col viz-widget card">
+            <h2>Returns to Homeless</h2>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="section-4-layer-1-tab"
+                  data-toggle="pill"
+                  href="#section-4-layer-1"
+                  role="tab"
+                  aria-controls="section-4-layer-1"
+                  aria-selected="true"
+                  >Individuals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="section-4-layer-2-tab"
+                  data-toggle="pill"
+                  href="#section-4-layer-2"
+                  role="tab"
+                  aria-controls="section-4-layer-2"
+                  aria-selected="false"
+                  >Demographics</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="section-4-layer-1"
+                role="tabpanel"
+                aria-labelledby="section-4-layer-1-tab"
+              ></div>
+              <div
+                class="tab-pane fade"
+                id="section-4-layer-2"
+                role="tabpanel"
+                aria-labelledby="section-4-layer-2-tab"
+              ></div>
             </div>
           </div>
         </div>
@@ -404,6 +597,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   </body>
