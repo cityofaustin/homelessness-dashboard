@@ -66,5 +66,17 @@ body {
   background-color: #FAF9F9;
 }
 
+.tooltip.show {
+  opacity: 1;
+
+}
+
+.tooltip-inner {
+  background: #ffffff;
+  color: black;
+  border: 1px solid #000000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
 
 

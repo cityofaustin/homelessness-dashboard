@@ -29,6 +29,11 @@
           let vizDiv = document.getElementById(divId);
           let = new tableau.Viz(vizDiv, url, options);
         }
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'hover focus click'
+          });
+        });
       }
     </script>
     <link
@@ -85,9 +90,24 @@
           <div class="col-md-3">
             <div class="card coa-metric-card">
               <div>
-                <span class="info-icon float-right mr-1" aria-expanded="false"
+                <span
+                  data-toggle="tooltip"
+                  data-html="true"
+                  data-placement="bottom"
+                  title="<p class='text-left'>
+                    This count includes anyone who:
+                    
+                    <ol class='text-left'>
+                    
+                    <li >Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time
+                    
+                    <li >Anyone who is seeking service for the first time in Austin’s CoC, though they have received services elsewhere. </p>"
+                  class="info-icon float-right mr-1"
+                  aria-expanded="false"
                   ><img src="/assets/images/information.svg" />
                 </span>
+                
+
                 <div class="pb-2 card-body">
                   <div class="row">
                     <!-- VALUE -->
@@ -161,7 +181,7 @@
                     <div
                       class="text-muted text-wrap pt-1 pr-1 widget-footer-text ml-2"
                     >
-                    Up by <span class="change">186</span> in the last year
+                      Up by <span class="change">186</span> in the last year
                     </div>
                   </div>
                 </div>
@@ -203,7 +223,7 @@
                     <div
                       class="text-muted text-wrap pt-1 pr-1 widget-footer-text ml-2"
                     >
-                    Up by <span class="change">205</span> in the last year
+                      Up by <span class="change">205</span> in the last year
                     </div>
                   </div>
                 </div>
@@ -246,7 +266,7 @@
                     <div
                       class="text-muted text-wrap pt-1 pr-1 widget-footer-text ml-2"
                     >
-                    Up by <span class="change">422</span> in the last year
+                      Up by <span class="change">422</span> in the last year
                     </div>
                   </div>
                 </div>
