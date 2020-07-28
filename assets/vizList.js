@@ -11,9 +11,9 @@ const vizList = [
       "section": 1,
       "section_title": "Newly Homeless",
       "layer": 2,
-      "visualization_description": "Break down of the demographics of people who are newly homeless",
-      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Breakdownofthedemographicsofpeoplewhoarenewlyhomeless/Sheet2?publish=yes",
-      "url": "https://public.tableau.com/views/Breakdownofthedemographicsofpeoplewhoarenewlyhomeless/Sheet2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
+      "visualization_description": "Comparison of the demographics of people who are newly homeless and people who live in Travis County ",
+      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/NewlyHomelessDashboard/Newly?publish=yes",
+      "url": "https://public.tableau.com/views/NewlyHomelessDashboard/Newly?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
     },
     {
       "section": 2,
@@ -35,9 +35,9 @@ const vizList = [
       "section": 2,
       "section_title": "Shelter",
       "layer": 3,
-      "visualization_description": "Comparison of the demographics of people in shelter and people who live in Travis County ",
-      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ComparisonofthedemographicsofpeopleinshelterandpeoplewholiveinTravisCounty/Total-Shelter?publish=yes",
-      "url": "https://public.tableau.com/views/ComparisonofthedemographicsofpeopleinshelterandpeoplewholiveinTravisCounty/Total-Shelter?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
+      "visualization_description": "Comparison of the demographics of people who are sheltered and newly homeless",
+      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Shelter?publish=yes",
+      "url": "https://public.tableau.com/views/ReturnsDashboard_15958669451740/Shelter?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
     },
     {
       "section": 3,
@@ -59,9 +59,9 @@ const vizList = [
       "section": 3,
       "section_title": "Housing",
       "layer": 3,
-      "visualization_description": "Comparison of the demographics of people who are sheltered and exit to housing",
-      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Comparisonofthedemographicsofpeoplewhoareshelteredandexittohousing/Total-Housed?publish=yes",
-      "url": "https://public.tableau.com/views/Comparisonofthedemographicsofpeoplewhoareshelteredandexittohousing/Total-Housed?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
+      "visualization_description": "Comparison of the demographics of people who are housed and sheltered",
+      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/HousingDashboard_15958669097400/Housing?publish=yes",
+      "url": "https://public.tableau.com/views/HousingDashboard_15958669097400/Housing?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
     },
     {
       "section": 4,
@@ -75,9 +75,9 @@ const vizList = [
       "section": 4,
       "section_title": "Returns to Homelessness",
       "layer": 2,
-      "visualization_description": "Comparison of the demographics of people who exit to housing and return to homelessness",
-      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Comparisonofthedemographicsofpeoplewhoexittohousingandreturntohomelessness/Total-Returns",
-      "url": "https://public.tableau.com/views/Comparisonofthedemographicsofpeoplewhoexittohousingandreturntohomelessness/Total-Returns?:language=en&:display_count=y&:origin=viz_share_link"
+      "visualization_description": "Comparison of the demographics of people who return to homelessness and people who are housed",
+      "link": "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Return?publish=yes",
+      "url": "https://public.tableau.com/views/ReturnsDashboard_15958669451740/Return?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
     }
    ];
    

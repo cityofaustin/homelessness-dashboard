@@ -1,4 +1,4 @@
-# homelessness-dashboard
+# Homelessness Dashboard
 The City of Austin's Office of Design and Delivery is in the process of developing a platform to communicate homelessness initiatives to the public known as the Homelessness Dashboard. This README is intended to centralize documents and resources related to the project.
 
 ## Shared Terms
