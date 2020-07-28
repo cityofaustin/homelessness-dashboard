@@ -12,7 +12,7 @@
       src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
     ></script>
     <script type="text/javascript" src="assets/vizList.js"></script>
-
+    <script type="text/javascript" src="assets/disclaimer.js"></script>
     <script>
       function initializeViz() {
         // gets lists of urls that we want on the page and their associated html ids from vizList
@@ -36,6 +36,8 @@
         });
       }
     </script>
+
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -45,7 +47,7 @@
 
   <body onload="initializeViz();">
     <div>
-      <nav class="coa-box-shadow">
+      <nav class="coa-box-shadow coa-nav">
         <div class="container mt-1">
           <div class="row">
             <div class="col-md-3 align-self-center">
@@ -61,7 +63,7 @@
             </div>
 
             <div class="col-md-8">
-              <h1 class="text-center lead pr-5">
+              <h1 class="text-left lead pr-5">
                 Austin Homelessness Dashboard
               </h1>
               <p class="small">
@@ -77,6 +79,7 @@
               <button
                 type="button"
                 class="btn btn-dark coa-data-btn float-right"
+                data-toggle="modal" data-target="#dataDisclaimerModal"
               >
                 Data
               </button>
@@ -576,6 +579,24 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="dataDisclaimerModal" tabindex="-1" role="dialog" aria-labelledby="dataDisclaimerModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="data-disclaimer">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">I understand</button>
+      </div>
+    </div>
+  </div>
+</div>
     <footer class="container py-5">
       <div class="row">
         <div class="col-md-4">
@@ -607,6 +628,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      document.getElementById('data-disclaimer').innerHTML =
+        marked(dataDisclaimer);
+    </script>
 
 
   </body>

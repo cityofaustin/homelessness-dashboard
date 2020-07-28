@@ -78,3 +78,7 @@ body {
   max-width: 400px;
   width: inherit;
 }
+
+.coa-nav {
+  background: #ffffff;
+}
