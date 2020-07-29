@@ -41,13 +41,12 @@
         $(function () {
           $('[data-toggle="tooltip"]').tooltip({
             trigger: "hover focus click",
-
           });
         });
 
         // conditional tooltips for graphs
         $('[data-toggle="viz-tooltip"]').tooltip({
-          trigger: "hover focus click", 
+          trigger: "hover focus click",
         });
       }
 
@@ -385,7 +384,19 @@
         <div class="row">
           <!-- Newly Homeless -->
           <div class="col-md viz-widget card">
-            <h2>Newly Homeless</h2>
+            <div class="row">
+              <h2 class="col">Newly Homeless</h2>
+              <span
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
 
             <ul
               class="nav nav-pills mb-3"
@@ -434,7 +445,19 @@
           </div>
           <!-- Shelter -->
           <div class="col-md viz-widget card">
-            <h2>Shelter</h2>
+            <div class="row">
+              <h2 class="col">Shelter</h2>
+              <span
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
             <ul
               class="nav nav-pills mb-3"
               id="section-2-pills-tab"
@@ -505,7 +528,7 @@
             <div class="row">
               <h2 class="col">Housing</h2>
               <span
-                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end text-left"
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
                 data-toggle="viz-tooltip"
                 data-html="true"
                 data-placement="bottom"
@@ -583,7 +606,19 @@
           </div>
           <!-- Returns to Homeless -->
           <div class="col-md viz-widget card">
-            <h2>Returns to Homeless</h2>
+            <div class="row">
+              <h2 class="col">Returns to Homeless</h2>
+              <span
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
             <ul
               class="nav nav-pills mb-3"
               id="section-4-pills-tab"
