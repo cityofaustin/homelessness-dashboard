@@ -31,10 +31,16 @@
         }
         $(function () {
           $('[data-toggle="tooltip"]').tooltip({
-            trigger: 'hover focus click'
+            trigger: "hover focus click",
           });
         });
       }
+
+      // for tooltip toggle
+      // on click navbar element, run a function
+      // the function checks which id is active of that set
+      // it returns display: flex; for that associated tooltip (the rest are hidden)
+      // could also be used via a mutation observer
     </script>
     <link
       rel="stylesheet"
@@ -106,7 +112,6 @@
                   aria-expanded="false"
                   ><img src="/assets/images/information.svg" />
                 </span>
-                
 
                 <div class="pb-2 card-body">
                   <div class="row">
@@ -362,6 +367,7 @@
           <!-- Newly Homeless -->
           <div class="col-md viz-widget card">
             <h2>Newly Homeless</h2>
+
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item">
                 <a
@@ -469,7 +475,21 @@
         <div class="row">
           <!-- Housing -->
           <div class="col-md viz-widget card">
-            <h2>Housing</h2>
+            <div class="row">
+              <h2 class="col">Housing</h2>
+              <span
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="tooltip"
+                data-html="true"
+                data-placement="bottom"
+                title="stuff for 1st tooltip"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+              
+            </div>
+
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item">
                 <a
@@ -607,7 +627,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
-
   </body>
 </html>
