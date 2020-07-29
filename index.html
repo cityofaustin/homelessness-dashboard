@@ -387,6 +387,7 @@
             <div class="row">
               <h2 class="col">Newly Homeless</h2>
               <span
+                id="section-1-tooltip"
                 class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
                 data-toggle="viz-tooltip"
                 data-html="true"
@@ -448,6 +449,7 @@
             <div class="row">
               <h2 class="col">Shelter</h2>
               <span
+                id="section-2-tooltip"
                 class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
                 data-toggle="viz-tooltip"
                 data-html="true"
@@ -528,6 +530,7 @@
             <div class="row">
               <h2 class="col">Housing</h2>
               <span
+                id="section-3-tooltip"
                 class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
                 data-toggle="viz-tooltip"
                 data-html="true"
@@ -609,6 +612,7 @@
             <div class="row">
               <h2 class="col">Returns to Homeless</h2>
               <span
+                id="section-4-tooltip"
                 class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
                 data-toggle="viz-tooltip"
                 data-html="true"
@@ -699,8 +703,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script>
-      function getActiveContent() {
-        let activeViz = $("#section-3-pills-tab").find(".active");
+      function getActiveContent(sectionNumber) {
+        let activeViz = $(`#section-${sectionNumber}-pills-tab`).find(
+          ".active"
+        );
         let section = activeViz[0].dataset.section;
         let layer = activeViz[0].dataset.layer;
         // match json object by section, layer
@@ -711,11 +717,17 @@
           return tooltipContent;
         }
       }
-      $(
-        "body > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > div.row > span"
-      ).hover(function () {
-        this.dataset.originalTitle = `${getActiveContent()}`;
-      });
+      function setTooltipContent(sectionNumber) {
+        $(`#section-${sectionNumber}-tooltip`).hover(function () {
+          this.dataset.originalTitle = `${getActiveContent(sectionNumber)}`;
+        });
+      }
+
+      $(setTooltipContent(1));
+      $(setTooltipContent(2));
+      $(setTooltipContent(3));
+      $(setTooltipContent(4));
+      
     </script>
   </body>
 </html>

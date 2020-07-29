@@ -59,7 +59,7 @@ const vizList = [
     section_title: "Shelter",
     layer: 1,
     visualization_description: "Change in the total number of beds for shelter",
-    info: ``,
+    info: `you need to put stuff here`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofbedsusedtoshelterpeople/HousingandShelter2",
     url:
@@ -71,7 +71,7 @@ const vizList = [
     layer: 2,
     visualization_description:
       "Change in the total number of people who receive shelter",
-    info: ``,
+    info: `you need to put stuff here`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofpeoplewhoreceiveshelter/Sheet1?publish=yes",
     url:
@@ -83,7 +83,7 @@ const vizList = [
     layer: 3,
     visualization_description:
       "Comparison of the demographics of people who are sheltered and newly homeless",
-    info: ``,
+    info: `you need to put stuff here`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Shelter?publish=yes",
     url:
@@ -113,7 +113,7 @@ const vizList = [
     section: 3,
     section_title: "Housing",
     layer: 2,
-    info: ``,
+    info: `you need to put stuff here`,
     visualization_description:
       "Change in the total number of people who exit to homelessness to housing",
     link:
@@ -127,7 +127,7 @@ const vizList = [
     layer: 3,
     visualization_description:
       "Comparison of the demographics of people who are housed and sheltered",
-    info: ``,
+    info: `you need to put stuff here`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/HousingDashboard_15958669097400/Housing?publish=yes",
     url:
@@ -193,7 +193,7 @@ const vizList = [
     layer: 2,
     visualization_description:
       "Comparison of the demographics of people who return to homelessness and people who are housed",
-    info: ``,
+    info: `you need to put stuff here`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Return?publish=yes",
     url:
