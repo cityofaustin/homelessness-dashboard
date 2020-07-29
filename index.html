@@ -29,7 +29,7 @@
           let url = viz.url;
           let vizDiv = document.getElementById(divId);
           let = new tableau.Viz(vizDiv, url, options);
-          // add data attributes for tooltips
+          // add data attributes for tooltips so they can be referenced later
           let tabId = `section-${viz.section}-layer-${viz.layer}-tab`;
           let vizTab = document.getElementById(tabId);
           vizTab.setAttribute("data-section", viz.section);
@@ -41,15 +41,13 @@
         $(function () {
           $('[data-toggle="tooltip"]').tooltip({
             trigger: "hover focus click",
-            html: true,
+
           });
         });
 
         // conditional tooltips for graphs
         $('[data-toggle="viz-tooltip"]').tooltip({
-          trigger: "hover focus click",
-          title: `first`,
-          html: true,
+          trigger: "hover focus click", 
         });
       }
 
@@ -61,6 +59,7 @@
 
       // or: template literal as expression?
       // title of tooltip is based on a conditional expression
+      // spoiler alert: this is what i did, but the other options are other potential approaches
     </script>
     <link
       rel="stylesheet"
@@ -669,10 +668,13 @@
         let activeViz = $("#section-3-pills-tab").find(".active");
         let section = activeViz[0].dataset.section;
         let layer = activeViz[0].dataset.layer;
+        // match json object by section, layer
         let tooltipContent = vizList.filter(
-          (e) => e.section == section && e.layer == layer
+          (viz) => viz.section == section && viz.layer == layer
         )[0].info;
-        return tooltipContent;
+        if (tooltipContent !== undefined) {
+          return tooltipContent;
+        }
       }
       $(
         "body > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > div.row > span"
