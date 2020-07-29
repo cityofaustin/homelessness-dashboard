@@ -78,3 +78,8 @@ body {
   max-width: 400px;
   width: inherit;
 }
+
+
+.tooltip.show * {
+  text-align:left;
+}
