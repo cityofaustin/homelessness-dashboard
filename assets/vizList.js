@@ -21,7 +21,7 @@ const vizList = [
       "Change in the number of people who are newly homeless",
     info: `
     <p>
-    This count includes anyone who:
+    This count includes anyone who
     </p>
     <ol>
     
