@@ -1,5 +1,5 @@
 .viz-widget {
-  border: 1px solid #000000;
+
   box-sizing: border-box;
   border-radius: 4px;
   margin: 15px;
@@ -7,11 +7,12 @@
 }
 
 .card {
-  border: 1px solid #000000;
+  border: 0px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-footer {
-  border-top: 1px solid #000000;
+  border-top: .5px solid #000000;
 }
 
 
@@ -89,5 +90,9 @@ body {
 
 .modal-header {
   border: none;
+}
+
+a.coa-big-ol-button {
+padding-top: 60px;
 }
 
