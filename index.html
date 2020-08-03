@@ -742,15 +742,6 @@
           this.dataset.originalTitle = `${getActiveContent(sectionNumber)}`;
         });
       }
-    </script>
-    <script>
-      document.getElementById('data-disclaimer').innerHTML =
-        dataDisclaimer;
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      document.getElementById('data-disclaimer').innerHTML =
-        marked(dataDisclaimer);
-    </script>
 
 
       $(setTooltipContent(1));
@@ -758,6 +749,10 @@
       $(setTooltipContent(3));
       $(setTooltipContent(4));
       
+    </script>
+    <script>
+      document.getElementById('data-disclaimer').innerHTML =
+        dataDisclaimer;
     </script>
   </body>
 </html>
