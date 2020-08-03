@@ -10,6 +10,8 @@ tech debt/notes:
     * make sure each item in the list is seperated by a comma
     * make sure each object is enclosed in brackets and each object is comma seperated
     * ask a dev or a tech savvy person if you're having trouble! <3
+    * link: this was the original link to the viz on tableau if it was't being embedded somewhere
+    * url: this is the link we actually need to embed a viz on our page
 */
 const vizList = [
   {
