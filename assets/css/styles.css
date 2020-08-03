@@ -22,18 +22,18 @@
 .coa-big-ol-button {
   width: 100%;
   border: 1px solid #000000;
-  height: 180px;
+  height: 160px;
 }
 
-.coa-services {
+.coa-darkblue {
   background-color: #1a264f;
 }
 
-.coa-glossary {
+.coa-medblue {
   background-color: #5398be;
 }
 
-.coa-resources {
+.coa-lightblue {
   background-color: #b3d2e0;
 }
 

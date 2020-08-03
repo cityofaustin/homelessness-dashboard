@@ -61,7 +61,6 @@
       // spoiler alert: this is what i did, but the other options are other potential approaches (see bottom script imports)
     </script>
 
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -95,15 +94,20 @@
                 homelessness in Austin. The data visualizations featured here
                 are created by the City of Austin. The data is gathered by
                 Austin’s Continuum of Care, led by the Ending Community
-                Homelessness Coalition (ECHO). To view the full set of data,
-                visit data.austin.gov.
+                Homelessness Coalition (ECHO).
+                
+                <a
+                  href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance"
+                  >View the full set of data.</a
+                >
               </p>
             </div>
             <div class="col-md-1 align-self-center">
               <button
                 type="button"
                 class="btn btn-dark coa-data-btn"
-                data-toggle="modal" data-target="#dataDisclaimerModal"
+                data-toggle="modal"
+                data-target="#dataDisclaimerModal"
               >
                 Disclaimer
               </button>
@@ -675,53 +679,54 @@
       </div>
     </div>
     <!-- Modal -->
-<div class="modal fade" id="dataDisclaimerModal" tabindex="-1" role="dialog" aria-labelledby="dataDisclaimerModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id="data-disclaimer">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">I understand</button>
+    <div
+      class="modal fade"
+      id="dataDisclaimerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="dataDisclaimerModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="data-disclaimer"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              I understand
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <footer class="container py-5">
       <div class="row">
         <div class="col-md-4">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg coa-big-ol-button coa-services"
-          >
-            City Services
-          </button>
+
+          <a type="button"  href="http://austintexas.gov/homelessness/" class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-darkblue text-white">Austin's Homelessness Strategy<i class="fa fa-arrow-right ml-1"></i></a>
+
         </div>
         <div class="col-md-4">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg coa-big-ol-button coa-glossary"
-          >
-            Glossary
-          </button>
+          <a type="button"  href="http://austintexas.gov/department/homelessness-glossary" class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-medblue text-white">Glossary<i class="fa fa-arrow-right ml-1"></i></a>
         </div>
         <div class="col-md-4">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg coa-big-ol-button coa-resources"
-          >
-            Resources
-          </button>
+        <a type="button"  href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance" class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-lightblue text-white">Data<i class="fa fa-arrow-right ml-1"></i></a>
         </div>
       </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script>
       function getActiveContent(sectionNumber) {
         let activeViz = $(`#section-${sectionNumber}-pills-tab`).find(
@@ -743,16 +748,13 @@
         });
       }
 
-
       $(setTooltipContent(1));
       $(setTooltipContent(2));
       $(setTooltipContent(3));
       $(setTooltipContent(4));
-      
     </script>
     <script>
-      document.getElementById('data-disclaimer').innerHTML =
-        dataDisclaimer;
+      document.getElementById("data-disclaimer").innerHTML = dataDisclaimer;
     </script>
   </body>
 </html>
