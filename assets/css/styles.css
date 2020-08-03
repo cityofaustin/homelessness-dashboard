@@ -79,7 +79,15 @@ body {
   width: inherit;
 }
 
-
 .tooltip.show * {
   text-align:left;
 }
+
+.coa-nav {
+  background: #ffffff;
+}
+
+.modal-header {
+  border: none;
+}
+
