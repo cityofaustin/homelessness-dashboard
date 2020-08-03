@@ -24,17 +24,41 @@
 
         for (const [key, viz] of Object.entries(vizList)) {
           // console.log(`${key}: ${viz}`);
+          // put widgets in their associated html element
           let divId = `section-${viz.section}-layer-${viz.layer}`;
           let url = viz.url;
           let vizDiv = document.getElementById(divId);
           let = new tableau.Viz(vizDiv, url, options);
+          // add data attributes for tooltips so they can be referenced later
+          let tabId = `section-${viz.section}-layer-${viz.layer}-tab`;
+          let vizTab = document.getElementById(tabId);
+          vizTab.setAttribute("data-section", viz.section);
+          vizTab.setAttribute("data-layer", viz.layer);
         }
+      }
+      function initializeTooltips() {
+        // top rail tooltips
         $(function () {
           $('[data-toggle="tooltip"]').tooltip({
-            trigger: 'hover focus click'
+            trigger: "hover focus click",
           });
         });
+
+        // conditional tooltips for graphs
+        $('[data-toggle="viz-tooltip"]').tooltip({
+          trigger: "hover focus click",
+        });
       }
+
+      // for tooltip toggle
+      // on click navbar element, run a function
+      // the function checks which id is active of that set
+      // it returns display: flex; for that associated tooltip (the rest are hidden)
+      // could also be used via a mutation observer
+
+      // or: template literal as expression?
+      // title of tooltip is based on a conditional expression
+      // spoiler alert: this is what i did, but the other options are other potential approaches
     </script>
     <link
       rel="stylesheet"
@@ -43,7 +67,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
-  <body onload="initializeViz();">
+  <body onload="initializeViz();initializeTooltips();">
     <div>
       <nav class="coa-box-shadow">
         <div class="container mt-1">
@@ -106,7 +130,6 @@
                   aria-expanded="false"
                   ><img src="/assets/images/information.svg" />
                 </span>
-                
 
                 <div class="pb-2 card-body">
                   <div class="row">
@@ -361,8 +384,26 @@
         <div class="row">
           <!-- Newly Homeless -->
           <div class="col-md viz-widget card">
-            <h2>Newly Homeless</h2>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="row">
+              <h2 class="col">Newly Homeless</h2>
+              <span
+                id="section-1-tooltip"
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
+
+            <ul
+              class="nav nav-pills mb-3"
+              id="section-1-pills-tab"
+              role="tablist"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -405,8 +446,25 @@
           </div>
           <!-- Shelter -->
           <div class="col-md viz-widget card">
-            <h2>Shelter</h2>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="row">
+              <h2 class="col">Shelter</h2>
+              <span
+                id="section-2-tooltip"
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
+            <ul
+              class="nav nav-pills mb-3"
+              id="section-2-pills-tab"
+              role="tablist"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -469,12 +527,32 @@
         <div class="row">
           <!-- Housing -->
           <div class="col-md viz-widget card">
-            <h2>Housing</h2>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="row">
+              <h2 class="col">Housing</h2>
+              <span
+                id="section-3-tooltip"
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
+
+            <ul
+              class="nav nav-pills mb-3"
+              id="section-3-pills-tab"
+              role="tablist"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link active"
                   id="section-3-layer-1-tab"
+                  data-section="3"
+                  data-layer="1"
                   data-toggle="pill"
                   href="#section-3-layer-1"
                   role="tab"
@@ -531,8 +609,25 @@
           </div>
           <!-- Returns to Homeless -->
           <div class="col-md viz-widget card">
-            <h2>Returns to Homeless</h2>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="row">
+              <h2 class="col">Returns to Homeless</h2>
+              <span
+                id="section-4-tooltip"
+                class="info-icon float-right mr-1 col-sm-1 d-flex justify-content-end"
+                data-toggle="viz-tooltip"
+                data-html="true"
+                data-placement="bottom"
+                data-title="placeholder for 1st tooltip, if you see me its bad"
+                aria-expanded="false"
+                style="display: none;"
+                ><img src="/assets/images/information.svg" />
+              </span>
+            </div>
+            <ul
+              class="nav nav-pills mb-3"
+              id="section-4-pills-tab"
+              role="tablist"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -607,7 +702,32 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function getActiveContent(sectionNumber) {
+        let activeViz = $(`#section-${sectionNumber}-pills-tab`).find(
+          ".active"
+        );
+        let section = activeViz[0].dataset.section;
+        let layer = activeViz[0].dataset.layer;
+        // match json object by section, layer
+        let tooltipContent = vizList.filter(
+          (viz) => viz.section == section && viz.layer == layer
+        )[0].info;
+        if (tooltipContent !== undefined) {
+          return tooltipContent;
+        }
+      }
+      function setTooltipContent(sectionNumber) {
+        $(`#section-${sectionNumber}-tooltip`).hover(function () {
+          this.dataset.originalTitle = `${getActiveContent(sectionNumber)}`;
+        });
+      }
 
-
+      $(setTooltipContent(1));
+      $(setTooltipContent(2));
+      $(setTooltipContent(3));
+      $(setTooltipContent(4));
+      
+    </script>
   </body>
 </html>
