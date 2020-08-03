@@ -86,3 +86,7 @@ body {
 .coa-nav {
   background: #ffffff;
 }
+
+.modal-header {
+  border: none;
+}
