@@ -84,7 +84,7 @@ Right now, site content is drafted and written in a Google Doc. The best way for
 
 #### I need to change which visualizations are on the page. 
 
-The top rail components are written in the html directly. The sections of each are noted with code comments, and in general the content should be able to be easily updated without having to touch the html structure or class names. 
+The top rail components are written in the html directly. The sections of each are noted with code comments ([here](https://github.com/cityofaustin/homelessness-dashboard/blob/09ba7ef44398a5c643158e00b2ac5eeac29aed63/index.html#L158) is an example), and in general the content should be able to be easily updated without having to touch the html structure or class names. 
 
 For the sections and layers, you can easily update which ones are fetched up updating the 'url' entry for each layer in `assets/vizList.js`
 
@@ -94,7 +94,7 @@ The visualizations themselves are made using Tableau. You will need access to th
 
 If the tooltip is associated with a layer, the content is in the 'info' section of that layer's entry in `assets/vizList.js`
 
-If the tooltip is for a top rail, those are current hardcoded into `index.html` under 'title' for a given tooltip. See line 203 for an example.
+If the tooltip is for a top rail, those are current hardcoded into `index.html` under 'title' for a given tooltip. See [here](https://github.com/cityofaustin/homelessness-dashboard/blob/09ba7ef44398a5c643158e00b2ac5eeac29aed63/index.html#L201) for an example.
 
 #### I need to update what the data disclaimer says
 
