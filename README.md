@@ -8,10 +8,12 @@ It's helpful to have shared terms when talking about design and development, so 
 Stakeholders mentioned some terms makes sense to have working definitions of. This list is a living document, feel free to add to it as shared terms come up. 
 
 * **Concise**: showing lots of data with the option to drill down for more text info
-* **Flat**: content _may _be grouped by category, esp without a popup or tooltip. We don't want to click onto a different page to get to more information, more like a single page app
+* **Flat**: content _may_ be grouped by category, esp without a popup or tooltip. We don't want to click onto a different page to get to more information, more like a single page app
 * **Top rail**: the four visualiations that are essentially aggregate counts at the top of the dashboard.
-* **Tooltip/info**: popup with general information about a dataset
+* **Tooltip/info**: popup with general information about a dataset. Each layer also has its own tooltip. 
 * **Flyout**: popup with specific information about a chart as you hover over it's elements.
+* **Section**: a section is a part of the dashboard that has at least one embedded visualization
+* **Layer**: a section is composed of layers, each of which is its own visualization
 
 ## Links to project resources 
 
@@ -65,3 +67,40 @@ This is why we're going with this flexible and modular combination:
 *   There are some overall concerns with data quality, data quality will need to be looked at as a separate issue in order to ensure that accurate insights can continue to be derived.
 *   Someone with data expertise to make sure reports stay accurate. Long term the data needs to stay somewhere where the data can be managed effectively. 
 *   Potentially ability to expand or integrate dashboard into other mediums/more narrative driven content
+
+
+### Halp! I need to update the dashboard
+
+Have no fear! This is possible, in some cases without touching any of the code directly. 
+
+#### Ok, but how can I actually get my content into this website?
+
+Right now, site content is drafted and written in a Google Doc. The best way for now to import this content is:
+    1. Add the [docs to markdown](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607) extention
+    1. Open up the content doc
+    1. Highlight the selected section you want to import, and use the add-on to get an html rendering of that content
+    1. Copy paste this into the appropriate section on this site (see details below)
+
+#### I need to change which visualizations are on the page. 
+
+The top rail components are written in the html directly. The sections of each are noted with code comments, and in general the content should be able to be easily updated without having to touch the html structure or class names. 
+
+For the sections and layers, you can easily update which ones are fetched up updating the 'url' entry for each layer in `assets/vizList.js`
+
+The visualizations themselves are made using Tableau. You will need access to the appropriate Tableau workbook to modify their behavior or data source. 
+
+#### I need to update content for a tooltip
+
+If the tooltip is associated with a layer, the content is in the 'info' section of that layer's entry in `assets/vizList.js`
+
+If the tooltip is for a top rail, those are current hardcoded into `index.html` under 'title' for a given tooltip. See line 203 for an example.
+
+#### I need to update what the data disclaimer says
+
+Just modify the content in `assets/disclaimer.js`!
+
+#### I need to update the footer links or the content in the header
+
+Then you need to get comfy with the html, my friend. 
+
+
