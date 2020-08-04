@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-27761834-15"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-27761834-15");
+    </script>
+
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -95,7 +110,7 @@
                 are created by the City of Austin. The data is gathered by
                 Austin’s Continuum of Care, led by the Ending Community
                 Homelessness Coalition (ECHO).
-                
+
                 <a
                   href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance"
                   >View the full set of data.</a
@@ -711,22 +726,40 @@
     <footer class="container py-5">
       <div class="row">
         <div class="col-md-4">
-
-          <a type="button"  href="http://austintexas.gov/homelessness/" class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-darkblue text-white">Austin's Homelessness Strategy<i class="fa fa-arrow-right ml-1"></i></a>
-
+          <a
+            type="button"
+            href="http://austintexas.gov/homelessness/"
+            class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-darkblue text-white"
+            >Austin's Homelessness Strategy<i class="fa fa-arrow-right ml-1"></i
+          ></a>
         </div>
         <div class="col-md-4">
-          <a type="button"  href="http://austintexas.gov/department/homelessness-glossary" class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-medblue text-white">Glossary<i class="fa fa-arrow-right ml-1"></i></a>
+          <a
+            type="button"
+            href="http://austintexas.gov/department/homelessness-glossary"
+            class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-medblue text-white"
+            >Glossary<i class="fa fa-arrow-right ml-1"></i
+          ></a>
         </div>
         <div class="col-md-4">
-        <a type="button"  href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance" class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-lightblue text-white">Data<i class="fa fa-arrow-right ml-1"></i></a>
+          <a
+            type="button"
+            href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance"
+            class="btn btn-primary btn-link btn-lg coa-big-ol-button coa-lightblue text-white"
+            >Data<i class="fa fa-arrow-right ml-1"></i
+          ></a>
         </div>
       </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
     <script>
       function getActiveContent(sectionNumber) {
         let activeViz = $(`#section-${sectionNumber}-pills-tab`).find(
