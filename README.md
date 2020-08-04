@@ -76,10 +76,11 @@ Have no fear! This is possible, in some cases without touching any of the code d
 #### Ok, but how can I actually get my content into this website?
 
 Right now, site content is drafted and written in a Google Doc. The best way for now to import this content is:
-    1. Add the [docs to markdown](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607) extention
-    1. Open up the content doc
-    1. Highlight the selected section you want to import, and use the add-on to get an html rendering of that content
-    1. Copy paste this into the appropriate section on this site (see details below)
+
+ 1. Add the [docs to markdown](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607) extention
+ 1. Open up the content doc
+ 1. Highlight the selected section you want to import, and use the add-on to get an html rendering of that content
+ 1. Copy paste this into the appropriate section on this site (see details below)
 
 #### I need to change which visualizations are on the page. 
 
