@@ -62,7 +62,16 @@ This count includes anyone who:
     section_title: "Shelter",
     layer: 1,
     visualization_description: "Change in the total number of beds for shelter",
-    info: `you need to put stuff here`,
+    info: `<p>
+Federally Funded Shelter Types Included in This Count:
+</p>
+<ul>
+
+<li>Safe Haven - A program that provides temporary shelter to veterans experiencing homelessness who live with mental illness.
+
+<li>Emergency Shelter -  A program that provides people with immediate temporary shelter.
+
+<li>Transitional Housing - A program that provides a supportive longer term shelter that is meant to bridge the gap from homelessness to permanent housing by offering structure, support, life skills, education, etc.`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofbedsusedtoshelterpeople/HousingandShelter2",
     url:
