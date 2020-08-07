@@ -23,13 +23,14 @@ const vizList = [
       "Change in the number of people who are newly homeless",
     info: `
     <p>
-    This count includes anyone who:
-    </p>
-    <ol>
-    
-    <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time
-    
-    <li>Anyone who is seeking service for the first time in Austin’s CoC, though they have received services elsewhere.
+   <p>
+This count includes anyone who:
+</p>
+<ol type="A">
+
+<li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
+
+<li>Anyone who is seeking service for the first time in Austin or Travis County, though they have received services elsewhere.
     `,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthenumberofpeoplewhoarenewlyhomeless/Sheet1?publish=yes",
@@ -43,13 +44,13 @@ const vizList = [
     visualization_description:
       "Comparison of the demographics of people who are newly homeless and people who live in Travis County ",
     info: `<p>
-    This count includes anyone who:
-    </p>
-    <ol>
-    
-    <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time
-    
-    <li>Anyone who is seeking service for the first time in Austin’s CoC, though they have received services elsewhere.
+This count includes anyone who:
+</p>
+<ol type="A">
+
+<li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
+
+<li>Anyone who is seeking homelessness services for the first time in Austin or Travis County.
     `,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/NewlyHomelessDashboard/Newly?publish=yes",
