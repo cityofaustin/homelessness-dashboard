@@ -23,13 +23,14 @@ const vizList = [
       "Change in the number of people who are newly homeless",
     info: `
     <p>
-    This count includes anyone who:
-    </p>
-    <ol>
-    
-    <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time
-    
-    <li>Anyone who is seeking service for the first time in Austin’s CoC, though they have received services elsewhere.
+   <p>
+This count includes anyone who:
+</p>
+<ol type="A">
+
+<li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
+
+<li>Anyone who is seeking service for the first time in Austin or Travis County, though they may have received services elsewhere.
     `,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthenumberofpeoplewhoarenewlyhomeless/Sheet1?publish=yes",
@@ -43,13 +44,14 @@ const vizList = [
     visualization_description:
       "Comparison of the demographics of people who are newly homeless and people who live in Travis County ",
     info: `<p>
-    This count includes anyone who:
-    </p>
-    <ol>
-    
-    <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time
-    
-    <li>Anyone who is seeking service for the first time in Austin’s CoC, though they have received services elsewhere.
+This count includes anyone who:
+</p>
+<ol type="A">
+
+<li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
+
+<li>Anyone who is seeking homelessness services for the first time in Austin or Travis County, though they may have received services elsewhere.
+.
     `,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/NewlyHomelessDashboard/Newly?publish=yes",
@@ -61,7 +63,16 @@ const vizList = [
     section_title: "Shelter",
     layer: 1,
     visualization_description: "Change in the total number of beds for shelter",
-    info: `you need to put stuff here`,
+    info: `<p>
+Federally Funded Shelter Types Included in This Count:
+</p>
+<ul>
+
+<li>Safe Haven - A program that provides temporary shelter to veterans experiencing homelessness who live with mental illness.
+
+<li>Emergency Shelter -  A program that provides people with immediate temporary shelter.
+
+<li>Transitional Housing - A program that provides a supportive longer term shelter that is meant to bridge the gap from homelessness to permanent housing by offering structure, support, life skills, education, etc.`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofbedsusedtoshelterpeople/HousingandShelter2",
     url:
@@ -73,7 +84,9 @@ const vizList = [
     layer: 2,
     visualization_description:
       "Change in the total number of people who receive shelter",
-    info: `you need to put stuff here`,
+    info: `<p>
+While data has been collected for 2019, it is still being analyzed. New information will be added as it becomes available.
+</p>`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofpeoplewhoreceiveshelter/Sheet1?publish=yes",
     url:
@@ -85,7 +98,9 @@ const vizList = [
     layer: 3,
     visualization_description:
       "Comparison of the demographics of people who are sheltered and newly homeless",
-    info: `you need to put stuff here`,
+    info: `<p>
+<del>Children represent a smaller percentage of those sheltered than newly homeless. This is likely due to the fact that children, especially unaccompanied children enter into other systems like the child protective services, foster care, or into the care of family.</del>
+</p>`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Shelter?publish=yes",
     url:
