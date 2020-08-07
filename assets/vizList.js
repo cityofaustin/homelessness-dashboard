@@ -107,9 +107,9 @@ const vizList = [
       <li>Permanent Supportive Housing (PSH) - Provides long-term housing subsidies and supportive services. This program is available to families and people with disabilities.
       `,
     link:
-      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofbedsusedtohousepeople/HousingandShelter3?publish=yes",
+      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ShelteredDashboard/Shelter",
     url:
-      "https://public.tableau.com/views/Changeinthetotalnumberofbedsusedtohousepeople/HousingandShelter3?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+      "https://public.tableau.com/views/ShelteredDashboard/Shelter?:language=en&:display_count=y&:origin=viz_share_link",
   },
   {
     section: 3,
