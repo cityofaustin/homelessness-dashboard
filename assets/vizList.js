@@ -83,7 +83,9 @@ Federally Funded Shelter Types Included in This Count:
     layer: 2,
     visualization_description:
       "Change in the total number of people who receive shelter",
-    info: `you need to put stuff here`,
+    info: `<p>
+While data has been collected for 2019, it is still being analyzed. New information will be added as it becomes available.
+</p>`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofpeoplewhoreceiveshelter/Sheet1?publish=yes",
     url:
@@ -95,7 +97,9 @@ Federally Funded Shelter Types Included in This Count:
     layer: 3,
     visualization_description:
       "Comparison of the demographics of people who are sheltered and newly homeless",
-    info: `you need to put stuff here`,
+    info: `<p>
+Children represent a smaller percentage of those sheltered than newly homeless. This is likely due to the fact that children, especially unaccompanied children enter into other systems like the child protective services, foster care, or into the care of family.
+</p>`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Shelter?publish=yes",
     url:
@@ -108,13 +112,15 @@ Federally Funded Shelter Types Included in This Count:
     visualization_description: "Change in the total number of beds for housing",
     info: `
       <p>
-      This visualization shows the count of beds available in housing programs, including:
-      </p>
-      <ul>
-      
-      <li>Rapid Rehousing (RRH) - Provides rental assistance and services for short or medium-term periods of time (up to 24 months). The goals of this program is to help people obtain housing quickly, increase self- sufficiency, and stay housed. It is offered without preconditions (such as employment, income, absence of a criminal record, or sobriety).
-      
-      <li>Permanent Supportive Housing (PSH) - Provides long-term housing subsidies and supportive services. This program is available to families and people with disabilities.
+This visualization shows the count of beds available in housing programs, including:
+</p>
+<ul>
+
+<li>Rapid Rehousing (RRH) - Rental assistance for periods of time up to 24 months. The goals of this program is to help people get housed quickly and without preconditions (such as income, absence of a criminal record, or sobriety).
+
+<li>Permanent Supportive Housing (PSH) -Long-term housing and supportive services for families and people with disabilities.
+
+<li>Other Permanent Housing (OPH) - A federally funded program that provides long-term housing, without supportive services.
       `,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ShelteredDashboard/Shelter",
@@ -125,7 +131,9 @@ Federally Funded Shelter Types Included in This Count:
     section: 3,
     section_title: "Housing",
     layer: 2,
-    info: `you need to put stuff here`,
+    info: `<p>
+This yearly count includes individuals that have been housed for 6 months or more as well as people who are newly housed. This number does not account for individuals who manage to get housed in non-CoC housing. 
+</p>`,
     visualization_description:
       "Change in the total number of people who exit to homelessness to housing",
     link:
@@ -139,7 +147,9 @@ Federally Funded Shelter Types Included in This Count:
     layer: 3,
     visualization_description:
       "Comparison of the demographics of people who are housed and sheltered",
-    info: `you need to put stuff here`,
+    info: `<p>
+Sometimes the number of people who exit to housing is higher than the number of people who stayed in a shelter. An example of this is the veteran population. A higher exit number means that a portion of the exits to housing are happening from the street. A shelter stay is not required to qualify for housing assistance. Veterans have received focused attention and funding from multiple agencies since 2016, which accounts for the high housing rate amongst this demographic. 
+</p>`,
     link:
       "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/HousingDashboard_15958669097400/Housing?publish=yes",
     url:
