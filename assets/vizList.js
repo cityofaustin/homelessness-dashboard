@@ -101,9 +101,9 @@ While data has been collected for 2019, it is still being analyzed. New informat
 Children represent a smaller percentage of those sheltered than newly homeless. This is likely due to the fact that children, especially unaccompanied children enter into other systems like the child protective services, foster care, or into the care of family.
 </p>`,
     link:
-      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ReturnsDashboard_15958669451740/Shelter?publish=yes",
+      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ShelteredDashboard/Shelter?publish=yes",
     url:
-      "https://public.tableau.com/views/ReturnsDashboard_15958669451740/Shelter?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+      "https://public.tableau.com/views/ShelteredDashboard/Shelter?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
   },
   {
     section: 3,
@@ -123,9 +123,9 @@ This visualization shows the count of beds available in housing programs, includ
 <li>Other Permanent Housing (OPH) - A federally funded program that provides long-term housing, without supportive services.
       `,
     link:
-      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/ShelteredDashboard/Shelter",
+      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofbedsusedtohousepeople/HousingandShelter3",
     url:
-      "https://public.tableau.com/views/ShelteredDashboard/Shelter?:language=en&:display_count=y&:origin=viz_share_link",
+      "https://public.tableau.com/views/Changeinthetotalnumberofbedsusedtohousepeople/HousingandShelter3?:language=en&:display_count=y&:origin=viz_share_link",
   },
   {
     section: 3,
