@@ -112,7 +112,7 @@ Children represent a smaller percentage of those sheltered than newly homeless. 
     visualization_description: "Change in the total number of beds for housing",
     info: `
       <p>
-This visualization shows the count of beds available in housing programs, including:
+This visualization shows the beds available in housing programs funded by the Continuum of Care, including:
 </p>
 <ul>
 
