@@ -26,7 +26,7 @@ const vizList = [
    <p>
 This count includes anyone who:
 </p>
-<ol type="A">
+<ul type="A">
 
 <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
 
@@ -46,7 +46,7 @@ This count includes anyone who:
     info: `<p>
 This count includes anyone who:
 </p>
-<ol type="A">
+<ul type="A">
 
 <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
 
