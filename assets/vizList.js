@@ -190,7 +190,7 @@ Not returning to homelessness services in Austin’s Continuum of Care does not 
 <strong>Three barrier types that contribute to homelessness:</strong>
 </p>
 <p>
-<strong>Structural</strong>Lack of affordable housing, and lack of support for those struggling with disability, employment, mental health, substance abuse, etc.
+<strong>Structural<br></strong>Lack of affordable housing, and lack of support for those struggling with disability, employment, mental health, substance abuse, etc.
 </p>
 <p>
 <strong>Institutional</strong>
