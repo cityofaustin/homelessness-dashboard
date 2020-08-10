@@ -11,10 +11,10 @@ There are people experiencing homelessness who choose not to seek services from 
 <h1>Data Discrepancies
 </h1>
 <p>
-Because of the nature of homelessness case work, data entry is incomplete, imperfect, and sometimes data changes after it is reported. The data featured in this dashboard is a snapshot of the issue of homelessness in Austin, but it is not comprehensive.
+Because of the nature of homelessness case work, data entry can be incomplete or imperfect, and sometimes data changes after it is reported. The data featured in this dashboard is a snapshot of the issue of homelessness in Austin, but it is not comprehensive.
 </p>
 <p>
-The Continuum of Care is in the process of analyzing 2019 data, and there are some metrics that still need to be updated. Data visualized in the dashboard will change as more current data becomes available.
+The Continuum of Care is currently analyzing 2019 data, and there are some metrics that still need to be updated. Data visualized in the dashboard will change as more current data becomes available.
 </p>
 <p>
 <a href="http://austintexas.gov/department/homelessness-glossary">Learn more about homelessness terminology and how this data is collected</a>. 
