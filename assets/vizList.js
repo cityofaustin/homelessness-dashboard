@@ -63,13 +63,13 @@ This count includes anyone who:
     layer: 1,
     visualization_description: "Change in the total number of beds for shelter",
     info: `<p>
-Federally Funded Shelter Types Included in This Count:
+Federally funded shelter types included in this count:
 </p>
 <ul>
 
 <li>Safe Haven - A program that provides temporary shelter to veterans experiencing homelessness who live with mental illness.
 
-<li>Emergency Shelter -  A program that provides people with immediate temporary shelter.
+<li>Emergency Shelter - A program that provides people with immediate temporary shelter.
 
 <li>Transitional Housing - A program that provides a supportive longer term shelter that is meant to bridge the gap from homelessness to permanent housing by offering structure, support, life skills, education, etc.`,
     link:
@@ -132,7 +132,7 @@ This visualization shows the count of beds available in housing programs, includ
     section_title: "Housing",
     layer: 2,
     info: `<p>
-This yearly count includes individuals that have been housed for 6 months or more as well as people who are newly housed. This number does not account for individuals who manage to get housed in non-CoC housing. 
+This yearly count includes individuals that have been housed for 6 months or more as well as people who are newly housed. This number does not account for individuals who manage to get housed in non-Continuum of Care housing. 
 </p>`,
     visualization_description:
       "Change in the total number of people who exit to homelessness to housing",
@@ -170,7 +170,7 @@ Sometimes the number of people who exit to housing is higher than the number of 
 Not returning to homelessness services in Austin’s Continuum of Care does not necessarily indicate that an individual is no longer experiencing homelessness. These individuals may be seeking services in a different area or avoiding services altogether. 
 </p>
 <p>
-<strong>Comparing Austin to Other Major Continuums of Care.</strong>
+<strong>Comparing Austin to other major Continuums of Care.</strong>
 </p>
 <p>
 2019 data shows that 17% of individuals that received homelessness services in Austin returned to homelessness within 2 years. The national median for major cities is 18%.
@@ -187,10 +187,10 @@ Not returning to homelessness services in Austin’s Continuum of Care does not 
     visualization_description:
       "Comparison of the demographics of people who return to homelessness and people who are housed",
     info: `<p>
-<strong>Three Barrier Types That Contribute to Homelessness:</strong>
+<strong>Three barrier types that contribute to homelessness:</strong>
 </p>
 <p>
-<strong>Structural <br></strong>Lack of affordable housing, and lack of support for those struggling with disability, employment, mental health, substance abuse, etc.
+<strong>Structural</strong>Lack of affordable housing, and lack of support for those struggling with disability, employment, mental health, substance abuse, etc.
 </p>
 <p>
 <strong>Institutional</strong>
