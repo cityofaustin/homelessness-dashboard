@@ -137,9 +137,9 @@ This yearly count includes individuals that have been housed for 6 months or mor
     visualization_description:
       "Change in the total number of people who exit to homelessness to housing",
     link:
-      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Exits_15930134501040/Exits?publish=yes",
+      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Exits_15930134501040/Sheet1",
     url:
-      "https://public.tableau.com/views/Exits_15930134501040/Exits?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+      "https://public.tableau.com/views/Exits_15930134501040/Sheet1?:language=en&:display_count=y&:origin=viz_share_link",
   },
   {
     section: 3,
