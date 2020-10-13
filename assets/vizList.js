@@ -33,9 +33,9 @@ This count includes anyone who:
 <li>Anyone who is seeking service for the first time in Austin or Travis County, though they have received services elsewhere.
     `,
     link:
-      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthenumberofpeoplewhoarenewlyhomeless/Sheet1?publish=yes",
+      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Individualswhoarenewlyhomeless/Sheet1?publish=yes",
     url:
-      "https://public.tableau.com/views/Changeinthenumberofpeoplewhoarenewlyhomeless/Sheet1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+      "https://public.tableau.com/views/Individualswhoarenewlyhomeless/Sheet1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
   },
   {
     section: 1,
@@ -87,9 +87,9 @@ Federally funded shelter types included in this count:
 While data has been collected for 2019, it is still being analyzed. New information will be added as it becomes available.
 </p>`,
     link:
-      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Changeinthetotalnumberofpeoplewhoreceiveshelter/Sheet1?publish=yes",
+      "https://public.tableau.com/profile/sarah.rodriguez#!/vizhome/Individualswhoreceiveshelter/Sheet1?publish=yes",
     url:
-      "https://public.tableau.com/views/Changeinthetotalnumberofpeoplewhoreceiveshelter/Sheet1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
+      "https://public.tableau.com/views/Individualswhoreceiveshelter/Sheet1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link",
   },
   {
     section: 2,
