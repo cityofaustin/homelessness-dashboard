@@ -57,6 +57,8 @@
           $('[data-toggle="tooltip"]').tooltip({
             trigger: "hover focus click",
           });
+          var myDefaultWhiteList = $.fn.tooltip.Constructor.Default.whiteList
+          myDefaultWhiteList.ol = ['type']
         });
 
         // conditional tooltips for graphs
@@ -105,17 +107,19 @@
                 Austin Homelessness Dashboard
               </h1>
               <p class="small">
-         This dashboard is an informational resource on the issue of homelessness in Austin. The data visualizations featured here are created by the City of Austin. The data is gathered by Austin and Travis County’s Continuum of Care, led by the Ending Community Homelessness Coalition (ECHO).
-
-              <p>  <a
-                  href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance"
-                  >View the full set of data.</a><br>
-            
+                This dashboard is an informational resource on the issue of homelessness in Austin. The data visualizations featured here are created by the City of Austin. The data is gathered by Austin and Travis County’s Continuum of Care, led by the Ending Community Homelessness Coalition (ECHO).
+                <p>  
+                  <a href="https://data.austintexas.gov/browse?q=homeless&sortBy=relevance">
+                      View the full set of data.
+                  </a>
+                  <br>
+                </p>
               </p>
+              <p>
+                <a href="http://austintexas.gov/department/homelessness-glossary">
+                  Learn more about homelessness terminology and how this data is collected
+                </a>.
               </p>
-<p>
-<a href="http://austintexas.gov/department/homelessness-glossary">Learn more about homelessness terminology and how this data is collected</a>.
-</p>
             </div>
             <div class="col-md-1 align-self-center">
               <button
@@ -143,14 +147,16 @@
                   title="<p class='text-left'>
                     This count includes anyone who:
                     
-                    <ul class='text-left'>
+                    <ol type='A'>
+                      <li>Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.</li>
                     
-                    <li >Hasn’t received homelessness services in the last 2 years, including those who have previously been homeless or are experiencing homelessness for the first time.
-                    
-                    <li >Anyone who is seeking service for the first time in Austin’s Continuum of Care, though they have received services elsewhere. </p>"
+                      <li>Anyone who is seeking service for the first time in Austin’s Continuum of Care, though they have received services elsewhere. </li>
+                    </ol>
+                  </p>"
                   class="info-icon float-right mr-1"
                   aria-expanded="false"
-                  ><img src="/assets/images/information.svg" />
+                  >
+                  <img src="/assets/images/information.svg" />
                 </span>
 
                 <div class="pb-2 card-body">
@@ -199,12 +205,14 @@
                   data-placement="bottom"
                   title="
                   <div class='text-left'>
-                  <p>
-Anyone who enters into Safe Haven, Emergency Shelter or Transitional Housing during the fiscal year is included in this count.
-</p></div>"
+                    <p>
+                      Anyone who enters into Safe Haven, Emergency Shelter or Transitional Housing during the fiscal year is included in this count.
+                    </p>
+                  </div>"
                   class="info-icon float-right mr-1"
                   aria-expanded="false"
-                  ><img src="/assets/images/information.svg" />
+                  >
+                    <img src="/assets/images/information.svg" />
                 </span>
                 <div class="pb-2 card-body">
                   <div class="row">
@@ -253,18 +261,16 @@ Anyone who enters into Safe Haven, Emergency Shelter or Transitional Housing dur
                   title="
                   <div class='text-left'>
                     <p>
-This count includes individuals that:
-</p>
-<ul>
-
-<li>Have been housed for 6 months or more in a Permanent Supportive Housing or Other Permanent Housing program
-
-<li>Are newly transitioned to stable housing upon leaving shelter, Transitional Housing, or any permanent housing program 
-</li>
-</ul>
-<p>
-This number does not account for those who manage to get housed in non-Continuum of Care housing. 
-</p></div>"
+                      This count includes individuals that:
+                    </p>
+                    <ul>
+                      <li>Have been housed for 6 months or more in a Permanent Supportive Housing or Other Permanent Housing program</li>
+                      <li>Are newly transitioned to stable housing upon leaving shelter, Transitional Housing, or any permanent housing program</li>
+                    </ul>
+                    <p>
+                    This number does not account for those who manage to get housed in non-Continuum of Care housing. 
+                    </p>
+                  </div>"
                   class="info-icon float-right mr-1"
                   aria-expanded="false"
                   ><img src="/assets/images/information.svg" />
