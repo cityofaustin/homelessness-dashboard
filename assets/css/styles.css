@@ -93,3 +93,15 @@ body {
 a.coa-big-ol-button {
   padding-top: 60px;
 }
+
+
+.material-icons.icon-dark { 
+  color: #272727; 
+}
+
+.icon-20 {
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+}
+
