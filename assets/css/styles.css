@@ -103,6 +103,23 @@ a.coa-big-ol-button {
   background: #0050d8;
 }
 
+.card-banner {
+  background: #fef9e8;
+  border: 0;
+}
+
+.card-body {
+  background: #ffffff;
+}
+
+.no-border {
+  border:0;
+}
+
+.top-or-border { /*rename*/
+  border-top: 1px solid #fac710;
+}
+
 h1 {
   color: #ffffff;
   font-size: 24px;
