@@ -139,4 +139,25 @@ h1 {
   font-size: 24px;
 }
 
+a[aria-expanded=true] .plus-sign {
+  display: none
+}
+
+a[aria-expanded=false] .minus-sign {
+  display: none;
+}
+
+.plus-sign {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+.minus-sign {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+
 
