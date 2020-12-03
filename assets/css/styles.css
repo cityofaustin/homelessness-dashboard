@@ -108,6 +108,11 @@ a.coa-big-ol-button {
   border: 0;
 }
 
+.card-banner a {
+  color: #0049c7;
+  text-decoration: underline;
+}
+
 .card-body {
   background: #ffffff;
 }
