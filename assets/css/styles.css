@@ -120,6 +120,15 @@ a.coa-big-ol-button {
   border-top: 1px solid #fac710;
 }
 
+.dashboard-information {
+  margin-top: 45px;
+}
+
+.dashboard-information p {
+  font-size: 14px;
+  padding-left: 22px;
+}
+
 h1 {
   color: #ffffff;
   font-size: 24px;
