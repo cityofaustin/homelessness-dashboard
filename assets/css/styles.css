@@ -92,6 +92,35 @@ body {
 
 a.coa-big-ol-button {
   padding-top: 60px;
+<<<<<<< HEAD
+}
+
+.coa-heading {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #0050d8;
+}
+
+.card-banner {
+  background: #fef9e8;
+  border: 0;
+}
+
+.card-banner a {
+  color: #0049c7;
+  text-decoration: underline;
+}
+
+.card-body {
+  background: #ffffff;
+}
+
+.no-border {
+  border:0;
+}
+
+.top-or-border { /*rename*/
+  border-top: 1px solid #fac710;
 }
 
 
@@ -109,3 +138,41 @@ a.coa-big-ol-button {
   margin: 4px;
 }
 
+.dashboard-information {
+  margin-top: 45px;
+}
+
+.dashboard-information p {
+  font-size: 14px;
+  padding-left: 22px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+a[aria-expanded=true] .plus-sign {
+  display: none
+}
+
+a[aria-expanded=false] .minus-sign {
+  display: none;
+}
+
+.icon-link {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+.card-body a {
+  color: #0049c7;
+  text-decoration: underline;
+}
+
+.open-new-icon {
+  vertical-align: text-bottom;
+  font-size: 18px;
+  padding-left: 2px;
+}
