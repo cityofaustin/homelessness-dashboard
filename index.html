@@ -96,11 +96,9 @@
         <div class="card no-border">
           <div class="card-banner" id="headingOne">
             <div class="container">
-            <p class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Disclaimer: this dashboard contains partial data only. Read about the data discrepancies +
-              </button>
-            </p>
+              <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>Disclaimer:</span> this dashboard contains partial data only. <span>Read about the data discrepancies +</span>
+              </div>
             </div>
           </div>
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -133,17 +131,17 @@
       </div>
       </div>
       </div>
-      <div class="row"> <!--does not need to be row ?-->
-        <div class="col-md-2 align-self-center">
+      <div class="container d-flex flex-row"> 
+        <div>
           <img
             src="./assets/images/coa-seal.svg"
-            width="90"
-            height="90"
+            width="51"
+            height="51"
             class="d-inline-block align-top"
             alt="City of Austin Seal"
           />
         </div>
-        <div class="col-md-9">
+        <div>
           <p class="small">
             This dashboard is an informational resource on the issue of homelessness in Austin. The data visualizations featured here are created by the City of Austin. The data is gathered by Austin and Travis County’s Continuum of Care, led by the Ending Community Homelessness Coalition (ECHO).
           </p>
