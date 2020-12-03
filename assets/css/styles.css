@@ -147,17 +147,19 @@ a[aria-expanded=false] .minus-sign {
   display: none;
 }
 
-.plus-sign {
+.icon-link {
   text-decoration: none;
   display: inline-block;
   padding-left: 2px;
 }
 
-.minus-sign {
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 2px;
+.card-body a {
+  color: #0049c7;
+  text-decoration: underline;
 }
 
-
-
+.open-new-icon {
+  vertical-align: text-bottom;
+  font-size: 18px;
+  padding-left: 2px;
+}
