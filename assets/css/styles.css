@@ -92,7 +92,6 @@ body {
 
 a.coa-big-ol-button {
   padding-top: 60px;
-<<<<<<< HEAD
 }
 
 .coa-heading {
@@ -152,6 +151,10 @@ h1 {
   font-size: 24px;
 }
 
+h3 {
+  font-size: 1.25rem;
+}
+
 a[aria-expanded=true] .plus-sign {
   display: none
 }
@@ -175,4 +178,9 @@ a[aria-expanded=false] .minus-sign {
   vertical-align: text-bottom;
   font-size: 18px;
   padding-left: 2px;
+}
+
+.equalize {
+  padding-left: .75px;
+  padding-right: .75px;
 }
