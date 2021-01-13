@@ -30,6 +30,8 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 [Project Status Reports](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Project%2520Status%2520Reports)
 
 [User Research](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=User%2520Research)
+     
+  * [Usability Test](https://drive.google.com/drive/folders/1vFfIPVV7MSXGu2hZ-MWXrMYC9rfnx_ix?usp=sharing)
 
 [Content](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Content)
 
