@@ -1,5 +1,15 @@
 # Homelessness Dashboard
-The City of Austin's Office of Design and Delivery is in the process of developing a platform to communicate homelessness initiatives to the public known as the Homelessness Dashboard. This README is intended to centralize documents and resources related to the project.
+
+[https://homelessness.dashboards.austintexas.gov/](https://homelessness.dashboards.austintexas.gov/)
+
+The City of Austin's Office of Design and Delivery developed the Homelessness Dashboard to communicate homelessness initiatives to the public. This README is intended to centralize documents and resources related to the project.
+
+## Table of Contents
+
+* [Shared Terms](#shared-terms)
+* [Links to resources](#links)
+* [Technical Information]
+* [Requirements and Justification]
 
 ## Shared Terms
 
@@ -15,15 +25,11 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 * **Section**: a section is a part of the dashboard that has at least one embedded visualization
 * **Layer**: a section is composed of layers, each of which is its own visualization
 
-## Links to project resources 
-
-[Teams Channel](https://teams.microsoft.com/l/team/19%3a4206cc13ff6842bbb86553f4bd511a1d%40thread.skype/conversations?groupId=03e35b8c-00f9-44ac-8c62-880483932e59&tenantId=5c5e19f6-a6ab-4b45-b1d0-be4608a9a67f)
+## Links to documents and resources
 
 [Google Drive](https://drive.google.com/drive/u/1/folders/1JlueahWMpDeG2cFkQUVd14ccokbKq3AQ?ths=true)
 
 [Dev version](https://cityofaustin.github.io/homelessness-dashboard/)
-
-## Links to documents
 
 [Project Scope and Plan](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Project%2520Scope%2520and%2520Plan)
 
@@ -37,22 +43,11 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 
 [Visualizations](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Various%2520Documents)
 
-[Sprint Planning](https://teams.microsoft.com/_#/files/General?threadId=19%3A4206cc13ff6842bbb86553f4bd511a1d%40thread.skype&ctx=channel&context=Sprint%2520Planning)
+## Technical information
 
-## Halp! I need to update the dashboard
+The dashboard is an html file with embedded Tableau visualizations. 
 
-Have no fear! This is possible, in some cases without touching any of the code directly. 
-
-#### Ok, but how can I actually get my content into this website?
-
-Right now, site content is drafted and written in a Google Doc. The best way for now to import this content is:
-
- 1. Add the [docs to markdown](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607) extention
- 1. Open up the content doc
- 1. Highlight the selected section you want to import, and use the add-on to get an html rendering of that content
- 1. Copy paste this into the appropriate section on this site (see details below)
-
-#### I need to change which visualizations are on the page. 
+#### Changing which visualizations are on the page. 
 
 The top rail components are written in the html directly. The sections of each are noted with code comments ([here](https://github.com/cityofaustin/homelessness-dashboard/blob/09ba7ef44398a5c643158e00b2ac5eeac29aed63/index.html#L158) is an example), and in general the content should be able to be easily updated without having to touch the html structure or class names. 
 
@@ -60,7 +55,7 @@ For the sections and layers, you can easily update which ones are fetched up upd
 
 The visualizations themselves are made using Tableau. You will need access to the appropriate Tableau workbook to modify their behavior or data source. 
 
-#### I need to update content for a tooltip
+#### Changing content for a tooltip
 
 If the tooltip is associated with a layer, the content is in the 'info' section of that layer's entry in `assets/vizList.js`
 
@@ -98,12 +93,5 @@ This is why we're going with this flexible and modular combination:
 *   Someone with data expertise to make sure reports stay accurate. Long term the data needs to stay somewhere where the data can be managed effectively. 
 *   Potentially ability to expand or integrate dashboard into other mediums/more narrative driven content
 
-#### I need to update what the data disclaimer says
-
-Just modify the content in `assets/disclaimer.js`!
-
-#### I need to update the footer links or the content in the header
-
-Then you need to get comfy with the html, my friend. 
 
 
