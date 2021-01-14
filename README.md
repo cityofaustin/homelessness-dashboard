@@ -7,9 +7,9 @@ The City of Austin's Office of Design and Delivery developed the Homelessness Da
 ## Table of Contents
 
 * [Shared Terms](#shared-terms)
-* [Links to resources](#links)
-* [Technical Information]
-* [Requirements and Justification]
+* [Links to resources](#links-to-documents-and-resources)
+* [Technical Information](#technical-information)
+* [Requirements and Justification](#project-requirements-justification)
 
 ## Shared Terms
 
@@ -45,7 +45,7 @@ Stakeholders mentioned some terms makes sense to have working definitions of. Th
 
 ## Technical information
 
-The dashboard is an html file with embedded Tableau visualizations. 
+The dashboard is an html file with embedded Tableau visualizations using the [Bootstrap](https://getbootstrap.com/) framework.
 
 #### Changing which visualizations are on the page. 
 
@@ -60,6 +60,10 @@ The visualizations themselves are made using Tableau. You will need access to th
 If the tooltip is associated with a layer, the content is in the 'info' section of that layer's entry in `assets/vizList.js`
 
 If the tooltip is for a top rail, those are current hardcoded into `index.html` under 'title' for a given tooltip. See [here](https://github.com/cityofaustin/homelessness-dashboard/blob/09ba7ef44398a5c643158e00b2ac5eeac29aed63/index.html#L201) for an example.
+
+#### Deploying updates
+
+This github repo is set up in [Netlify](https://app.netlify.com/sites/austin-homelessness-dashboard/settings/deploys) for continuous deployment, under the Office of Design and Delivery account. Any push to the master branch will trigger a rebuild. 
 
 
 ## Project requirements, justification
